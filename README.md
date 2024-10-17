@@ -7,4 +7,4 @@ This program is made for calculate π
 3. It works on terminal
 
 # edit
-Download piepy.py and change
+Download piepy.py and change decimal precision.
