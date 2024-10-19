@@ -7,6 +7,12 @@ def calculate_pi(precision):
     pi_value = mp.pi  # Calculate the value of π
     return pi_value
 
+def save_to_file(pi_value, precision):
+    # Save the value of π to a text file
+    with open('pi_value.txt', 'w') as file:
+        file.write(f"The value of π calculated to {precision} decimal places is:\n")
+        file.write(str(pi_value))
+
 if __name__ == "__main__":
     try:
         precision = int(input("Enter the number of decimal places to calculate π: "))
@@ -15,5 +21,7 @@ if __name__ == "__main__":
         else:
             pi_value = calculate_pi(precision)
             print(f"The value of π: {pi_value}")
+            save_to_file(pi_value, precision)
+            print("The value of π has been saved to 'pi_value.txt'.")
     except ValueError:
         print("Please enter a valid integer.")
