@@ -10,8 +10,8 @@ This program is made for calculate π
 # Quick Start
 - All code can be found in the example
 - Download piepy.exe and start it
-- Enter numbers of demical places to calculate π (recommend not over 1000000)
-- Result is save at pi_value.txt
+- Enter numbers of demical places to calculate π (Result is save at pi_value.txt)
+- Change name of pi_value.txt to whatever you want
 
 
 
